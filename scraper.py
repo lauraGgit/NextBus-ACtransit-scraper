@@ -1,7 +1,8 @@
 import urllib2
 import xml.etree.ElementTree as ET
 import json
-routes = urllib2.urlopen("http://webservices.nextbus.com/service/publicXMLFeed?command=routeList&a=actransit").read()
+agency = "actransit"
+routes = urllib2.urlopen("http://webservices.nextbus.com/service/publicXMLFeed?command=routeList&a="+agency).read()
 
 routes_ET = ET.fromstring(routes)
 
@@ -44,5 +45,5 @@ for i in xrange(len(route_Arr)):
 	# for s in stop_ET.iter('stop'):
 	# 	print s.attrib
 stopsJson = json.JSONEncoder(stops)
-with open('actransit_stops.txt', 'w') as jsonFile:
+with open(agency+'_stops.txt', 'w') as jsonFile:
     json.dump(stops, jsonFile)
