@@ -8,6 +8,7 @@ Run <code>python scraper.py</code> in your command line to generate the agency_s
 
 ##Updating the Transit Agency
 You can update the agency by changing line 4 of <code>scraper.py</code>
-	agency = "actransit"
+
+    agency = "actransit"
 
 You can find your transit agency by looking at the tag element on this xml file [http://webservices.nextbus.com/service/publicXMLFeed?command=agencyList]
