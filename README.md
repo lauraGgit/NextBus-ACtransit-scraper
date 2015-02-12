@@ -1,5 +1,5 @@
-# NextBus-JSON-scraper
-This is a scraper of all the stops on the for a particular agency on the [NextBus API](http://api-portal.anypoint.mulesoft.com/nextbus/api/nextbus-api) converted from multiple XML calls to a single Json.
+# NextBus Scraper XML to Json
+This is a scraper of all the stops on the for a particular agency on the [NextBus API](http://api-portal.anypoint.mulesoft.com/nextbus/api/nextbus-api) converted from multiple XML calls to a single Json. An example of the output for ACTransit is found in <code>actransit_stops.txt </code>.
 
 No API key is needed!
 
